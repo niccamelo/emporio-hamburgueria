@@ -1,0 +1,71 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    height: 600px;
+
+}
+
+.textContact {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: left;
+    width: 400px;
+    contain: '';
+    margin: 2rem;
+}
+
+.textContact p {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: end;
+}
+
+.imgContact {
+    height: 235px;
+    align-items: end;
+}
+
+.contact h4 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: end;
+}
+
+@media only screen and (max-width: 748px) {
+    .btn1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 40px;
+        top: 7.5rem;
+        right: 8.5rem;
+        font-weight: 700;
+        font-size: 10px;
+        z-index: 100;
+
+    }
+    .btn1:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .imgContact {
+        height: 150px;
+    }
+}

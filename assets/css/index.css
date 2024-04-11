@@ -1,0 +1,32 @@
+@media only screen and (max-width: 748px) {
+
+    .imgMain {
+        height: 692px;
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    main .imgBurguer {
+        height: 390px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .btn1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 140px;
+        top: 30rem;
+        right: 5.4rem;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 20px;
+
+    }
+    .btn1:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
