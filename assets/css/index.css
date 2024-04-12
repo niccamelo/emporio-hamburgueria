@@ -1,32 +1,56 @@
+.navbar {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    padding: 5rem;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    background: #000000;
+    justify-content: end;
+    width: 100%;
+    height: 20px;
+}
+
+
 @media only screen and (max-width: 748px) {
 
     .imgMain {
-        height: 692px;
+        height: 742px;
         margin-top: 0;
         align-items: flex-start;
     }
 
     main .imgBurguer {
-        height: 390px;
+        height:410px;
         margin-top: 0;
         padding: 0;
     }
 
     .btn1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 250px;
-        height: 140px;
+        text-align: center;
+        width: 270px;
+        height: 150px;
         top: 30rem;
-        right: 5.4rem;
+        right: 4.5rem;
         font-weight: 700;
         font-size: 20px;
         border-radius: 20px;
-
+        background: transparent;
+        border: #e7d84b solid 2px ;
     }
+
     .btn1:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+    }
+
+    .buttonModal a {
+        text-decoration: none;
+        color: #000000;
     }
 }

@@ -1,0 +1,135 @@
+header {
+    display: flex;
+    background: #fc4630;
+    justify-content: end;
+    width: 100%;
+    height: 20px;
+}
+
+.navbar {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fc4630;
+    padding: 5rem;
+    z-index: 1;
+}
+
+.listCards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.card {
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    background: #fc4630;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card img {
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
+}
+
+.card p {
+    color: #fc4630;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.menu {
+    padding: 3rem;
+}
+
+.menuImg:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(2.2);
+}
+
+@media only screen and (max-width: 748px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn1 {
+        text-align: center;
+        width: 170px;
+        height: 70px;
+        top: 3rem;
+        right: 1rem;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 20px;
+        background: transparent;
+        border: #e7d84b solid 2px ;
+    }
+
+    .btn1:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .buttonModal a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .listCards {
+        margin-top: 6rem;
+        height: 200px;
+    }
+    .cards{
+        width: 90%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .card img {
+        height: 5rem;
+        width: 5rem;
+        padding: .5rem;
+    }
+
+    .card p {
+        color: #fc4630;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .card .card-body {
+        padding: 0;
+    }
+
+    .menu {
+        margin: 0;
+        height: 600px;
+    }
+
+    .menuImg:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+}

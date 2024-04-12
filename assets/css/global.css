@@ -4,18 +4,6 @@ body {
 }
 
 
-header {
-    display: flex;
-    background: #000000;
-    justify-content: center;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-
-header img {
-    margin: 15px;
-}
 
 nav {
     transition: 1s ease;
@@ -25,15 +13,7 @@ nav:hover {
     transition: 1s ease;
 }
 
-.navbar {
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000000;
-    padding: 5rem;
-    z-index: 1;
-}
+
 
 .navbar a {
     color: #fff;
@@ -59,7 +39,6 @@ main {
     align-items: center;
     background: #000000;
     background-repeat: no-repeat;
-    background-image: url('../img/papeldeparede.png');
     content: '';
     margin: 0;
     background-size: 100% 2700px;
@@ -72,12 +51,12 @@ main {
     background-image: url('../img/papel\ de\ parede.png');
     content: '';
     width: 100%;
-    height: 600px;
+    height: 400px;
     align-items: flex-end;
 }
 
 main .imgBurguer {
-    height: 660px;
+    height: 400px;
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 }
@@ -89,13 +68,9 @@ main .imgBurguer:hover {
 
 .btn1 {
     display: flex;
-    justify-content: center;
-}
-
-.btn1 {
-    display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background: #e7d84b;
     border-radius: 5px;
     border: none;
@@ -104,10 +79,9 @@ main .imgBurguer:hover {
     color: #000000;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    margin-top: 1rem;
-    position: fixed;
-    top: 6rem;
-    right: 6rem;
+    position: relative;
+    top: 1rem;
+    right: 4rem;
     box-shadow: 9px 7px 5px rgb(50 50 50 / 26%);
     z-index: 2;
 
@@ -123,29 +97,13 @@ main .imgBurguer:hover {
     color: #000000;
 }
 
-
-
-.form {
-    width: 300px;
-    background: #d61c59;
-    border-radius: 2rem;
-    height: 350px;
-}
-
-.form-floating {
-    margin: 1rem;
-}
-
-
-
-
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: #fc4630;
     width: 100%;
-    height: 150px;
+    height: 100px;
     justify-content: space-evenly;
     align-items: center;
     font-size: 12px;
@@ -160,10 +118,11 @@ footer {
     justify-content: center;
 }
 
-.col-p{
+.col-p {
     display: flex;
     flex-direction: row;
 }
+
 .midias p {
     display: flex;
     align-items: center;
@@ -187,6 +146,7 @@ footer {
     text-decoration: none;
     color: #000000;
 }
+
 .maps {
     display: flex;
     align-items: flex-start;
@@ -222,21 +182,14 @@ footer {
 
 @media only screen and (max-width: 748px) {
 
-
     header {
         z-index: 1;
         position: relative;
+    
     }
-
-   
 
     main {
-        background-size: 110% 3100px;
-    }
-
-    
-    .listCards {
-        height: 500px;
+        background-size: 110% 3300px;
     }
 
     .navbar {
@@ -246,25 +199,21 @@ footer {
 
     }
 
-
     .navbar-toggler-icon {
-        background: #e7d84b;
+        background-color: #e7d84b;
     }
 
     .carousel-inner {
         margin-top: 2rem;
     }
 
-
-    
-
     .maps {
         height: 80px;
     }
 
     .maps iframe {
-        height: 70px;
-        width: 70px;
+        height: 60px;
+        width: 60px;
         padding: 0;
     }
 

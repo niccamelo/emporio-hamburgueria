@@ -1,3 +1,21 @@
+header {
+    display: flex;
+    background: #fc4630;
+    justify-content: end;
+    width: 100%;
+    height: 20px;
+}
+
+.navbar {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fc4630;
+    padding: 5rem;
+    z-index: 1;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -5,15 +23,14 @@
     width: 100%;
     padding: 1rem;
     justify-content: center;
-    height: 600px;
+    height: 500px;
 
 }
 
 .textContact {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    text-align: left;
+    align-items: center;
     width: 400px;
     contain: '';
     margin: 2rem;
@@ -39,25 +56,36 @@
 }
 
 @media only screen and (max-width: 748px) {
-    .btn1 {
+    header {
         display: flex;
-        align-items: center;
         justify-content: center;
-        width: 150px;
-        height: 40px;
-        top: 7.5rem;
-        right: 8.5rem;
-        font-weight: 700;
-        font-size: 10px;
-        z-index: 100;
-
     }
+
+    .btn1 {
+        text-align: center;
+        width: 170px;
+        height: 70px;
+        top: 3rem;
+        right: .5rem;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 20px;
+        background: transparent;
+        border: #e7d84b solid 2px;
+    }
+
     .btn1:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
-    
+
+    .buttonModal a {
+        text-decoration: none;
+        color: #fff;
+    }
+
     .contact {
+        margin-top: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,5 +95,33 @@
 
     .imgContact {
         height: 150px;
+    }
+    .contactMidias {
+        display: flex;
+        width: 100px;
+        align-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 350px;
+    }
+    
+    .col-mi {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactMidias p {
+        display: flex;
+        align-items: center;
+        padding: .2rem;
+        margin: .1rem;
+        font-family: "Poppins", sans-serif;
+        text-align: end;
+        width: 30px;
+        justify-content: center;
+        border-radius: .2rem;
+        border: solid #fff .1rem;
+        font-size: 10px;
     }
 }
